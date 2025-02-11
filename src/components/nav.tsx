@@ -66,14 +66,14 @@ export default function Nav() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out ${
-        isScrolled ? "bg-black/30 backdrop-blur-sm shadow-xl" : "bg-transparent"
+        isScrolled ? "bg-white/20 backdrop-blur-sm shadow-xl" : "bg-transparent"
       }`}
     >
       {/* Desktop Navigation */}
       <div className="mx-10 hidden py-1 md:block">
         <nav className="flex items-center justify-between">
           <a href="/">
-            <img src="/sur-logo.png" alt="Logo Fullseguros" width={250} height={50} />
+            <img src="/logo-final.png" alt="Logo Fullseguros" width={250} height={50} />
           </a>
           <ul className="flex items-center gap-8 pl-20 ml-auto">
             {navItems.map((item) => (
