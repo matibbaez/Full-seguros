@@ -28,7 +28,7 @@ export function MobileNav() {
     <div className="relative pl-3 text-4xl md:hidden">
       <nav className="my-1 flex items-center justify-between">
         <a href="/">
-            <img src="/sur-seguros.png" alt="Logo Fullseguros" width={150} height={50} />
+            <img src="/sur-logo.png" alt="Logo Fullseguros" width={150} height={50} />
         </a>
         <div className="flex items-center gap-2">
           <NavigationMenu>

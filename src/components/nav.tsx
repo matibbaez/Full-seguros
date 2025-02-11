@@ -73,7 +73,7 @@ export default function Nav() {
       <div className="mx-10 hidden py-1 md:block">
         <nav className="flex items-center justify-between">
           <a href="/">
-            <img src="/sur-seguros.png" alt="Logo Fullseguros" width={250} height={50} />
+            <img src="/sur-logo.png" alt="Logo Fullseguros" width={250} height={50} />
           </a>
           <ul className="flex items-center gap-8 pl-20 ml-auto">
             {navItems.map((item) => (
