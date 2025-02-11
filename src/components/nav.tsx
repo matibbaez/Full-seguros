@@ -26,12 +26,12 @@ const NavLink: React.FC<NavLinkProps> = ({
         isActive ? "text-blue-400" : ""
       } ${
         isButton
-          ? "bg-[#E40134] px-3 py-1.5 border-none group"
+          ? "bg-[#f08100] px-3 py-1.5 border-none group"
           : ""
       }`}
       href={href}
     >
-      <span className="relative rounded-[25px] z-10 transition-all duration-1000 group-hover:text-[#E40134]">
+      <span className="relative rounded-[25px] z-10 transition-all duration-1000 group-hover:text-[#f08100]">
         {children}
       </span>
       {isButton && (
@@ -66,14 +66,14 @@ export default function Nav() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out ${
-        isScrolled ? "bg-[#1a3855] shadow-xl backdrop-blur-sm" : "bg-transparent"
+        isScrolled ? "bg-[#0f022d] shadow-xl backdrop-blur-sm" : "bg-transparent"
       }`}
     >
       {/* Desktop Navigation */}
       <div className="mx-10 hidden py-1 md:block">
         <nav className="flex items-center justify-between">
           <a href="/">
-            <img src="/fullseguros.png" alt="Logo Fullseguros" width={250} height={50} />
+            <img src="/sur-seguros.png" alt="Logo Fullseguros" width={250} height={50} />
           </a>
           <ul className="flex items-center gap-8 pl-20 ml-auto">
             {navItems.map((item) => (

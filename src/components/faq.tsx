@@ -11,7 +11,7 @@ export default function Faq() {
       id="FAQ"
       className="w-full min-h-[50vh] bg-white flex flex-col items-center justify-center px-6 md:px-20 py-12"
     >
-      <h2 className="mb-5 text-center text-3xl sm:text-5xl font-light leading-tight text-[#1a3855]">
+      <h2 className="mb-5 text-center text-3xl sm:text-5xl font-light leading-tight text-[#0f022d]">
         Preguntas <br />
         <span className="font-bold">Frecuentes</span>
       </h2>
@@ -19,7 +19,7 @@ export default function Faq() {
       <Accordion type="single" collapsible className="w-full max-w-3xl text-left">
         {faqData.map(({ id, question, answer }) => (
           <AccordionItem key={id} value={id}>
-            <AccordionTrigger className="text-[18px] sm:text-[20px] font-semibold text-[#1a3855] text-left">
+            <AccordionTrigger className="text-[18px] sm:text-[20px] font-semibold text-[#0f022d] text-left">
               {question}
             </AccordionTrigger>
             <AccordionContent className="text-gray-700 text-base sm:text-lg mt-2">
