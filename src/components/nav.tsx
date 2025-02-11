@@ -66,7 +66,7 @@ export default function Nav() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out ${
-        isScrolled ? "bg-[#0f022d] shadow-xl backdrop-blur-sm" : "bg-transparent"
+        isScrolled ? "bg-black/30 backdrop-blur-sm shadow-xl" : "bg-transparent"
       }`}
     >
       {/* Desktop Navigation */}
@@ -96,3 +96,4 @@ export default function Nav() {
     </header>
   );
 }
+
