@@ -1,0 +1,75 @@
+---
+const link = "/Contact";
+import Image from "astro/components/Image.astro";
+
+// Ajusta estas variables para cambiar el contenido
+const mainText = "Más que un seguro,<br>una compañía en tu<br>camino";
+const secondaryText = "Contactar un asesor >";
+const smallText = "Estamos presentes en cada paso de la vida nuestros clientes. Más que un seguro<br>ofrecemos un acompañamiento constante y apoyo en momentos claves.";
+---
+
+<head>
+  <link rel="preload" href="/slider2.jpg" as="image" />
+</head>
+
+<section class="relative z-[-10] h-[99vh] w-full">
+  <div 
+    class="relative z-10 flex h-full flex-col md:flex-row justify-start items-center text-gray-100 text-left gap-8 p-6 md:p-0" 
+    style="background: linear-gradient(rgba(29, 30, 32, 0.75), rgba(18, 25, 43, 0.75)), url(/slider2.jpg); background-size: cover; background-position: center;"
+  >
+    
+    <!-- 🔹 Elemento numérico con línea (oculto en pantallas pequeñas) -->
+    <div class="hidden md:flex flex-col items-center md:ml-10">
+      <!-- Número superior -->
+      <div class="text-white text-[18px] font-normal tracking-wide leading-[25px] mb-2">
+        01
+      </div>
+
+      <!-- Línea Vertical -->
+      <div class="w-[2px] h-[40px] md:h-[80px] bg-white"></div>
+      <div class="w-[2px] h-[40px] md:h-[80px] bg-white/35"></div>
+
+      <!-- Número inferior -->
+      <div class="text-white text-[18px] font-normal tracking-wide leading-[25px] mt-2">
+        02
+      </div>
+    </div>
+
+    <!-- 🔹 Contenido de texto al lado derecho -->
+    <div class="flex flex-col mt-0 sm:mt-[200px] md:mt-0 items-start md:pl-[200px] text-center md:text-left mt-small">
+
+      <h1
+        data-testid="hero-text"
+        class="text-left md:text-left text-[32px] sm:text-[40px] md:text-[70px] font-bold leading-[1.1]"
+        set:html={mainText}
+      />
+
+      <div class="w-full mt-4 flex flex-col md:flex-row items-start gap-4 md:pl-5">
+        <a
+          id="SR7_8_1-28-6"
+          class="text-[18px] sm:text-[20px] md:text-[22px] font-medium text-white hover:underline transition-all duration-300 ease-in-out transform hover:scale-90 hover:opacity-80 inline-block"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {secondaryText}
+        </a>
+
+        <!-- 🔹 Pequeño texto que se oculta en pantallas pequeñas -->
+        <p
+          class="hidden md:block text-[18px] pt-3 md:pt-7 text-white md:text-[17px]"
+          set:html={smallText}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+

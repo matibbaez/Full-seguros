@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MoreService from "../components/moreService.astro";
+import AboutDesc from "../components/about.astro";
+
+// Ajusta estas variables para cambiar el contenido
+const title = "Nosotros";
+const introText = "Más que un seguro, una compañía en tu camino.";
+const secondIntroText = "Lograr estar presentes.";
+const subText = "Más allá de ofrecer una variedad de seguros, construimos una red sólida de confianza, protección y agilidad con el fin de acompañar a nuestros clientes en su camino hacia un futuro asegurado.";
+---
+
+<Layout title="Full Seguros | La Empresa">
+  <!-- Hero Section -->
+  <section
+    class="relative flex h-[50vh] items-start pl-10 bg-cover bg-center text-left text-white flex-col justify-center"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Empresa-Header.jpg');"
+  >
+    <h1 class="text-6xl pl-2 sm:pl-10">{title}</h1>
+  </section>
+
+  <!-- Menú de Navegación -->
+  <nav class="bg-[#1a3855] pl-2 sm:pl-10 py-5 text-[15px] text-white">
+    <ul class="flex justify-start space-x-8 pl-10">
+      <li><a href="#" class="hover:text-gray-300">Sobre nosotros</a></li>
+      <li><a href="#proposito" class="hover:text-gray-300">Propósito</a></li>
+      <li><a href="#pilares" class="hover:text-gray-300">Pilares</a></li>
+    </ul>
+  </nav>
+
+  <section class="w-full my-10 sm:my-20 px-6 sm:px-10 md:px-20 flex flex-col md:flex-row items-center">
+    <!-- Texto más a la izquierda -->
+    <div class="md:w-1/2 md:flex-1 text-left md:pr-10">
+      <h2 class="text-[35px] sm:text-5xl pb-4 sm:pb-10 text-gray-900 leading-[1] sm:leading-[1.2]">
+        {introText}
+      </h2>
+      <p class="mt-6 text-[17px] text-gray-700">{subText}</p>
+      <p class="mt-4 text-[17px] pb-10 sm:pb-0 text-gray-700">
+        Unimos fuerzas y creamos una compañía equilibrada con capacidades únicas para generar valor a nuestros grupos de interés. 
+        Nuestra sólida posición financiera asegura a nuestros clientes que estaremos ahí cuando nos necesiten para manejar sus reclamos.
+      </p>
+    </div>
+  
+    <!-- Imagen más larga -->
+    <div class="md:w-1/2 flex justify-end">
+      <img src="/lograr-scaled.jpg" 
+           alt="Equipo de trabajo" 
+           class="rounded-lg shadow-lg w-full md:w-[90%] md:h-[400px] object-cover">
+    </div>
+  </section>
+  
+  <!-- Nueva sección Propósito con efecto Parallax -->
+  <section
+  id="proposito" class="relative flex h-[80vh] sm:h-[70vh] w-full items-center justify-start text-white px-6 sm:px-10 md:px-20 bg-cover bg-center bg-no-repeat bg-fixed"
+  style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/lograr-scaled.jpg');"
+  >
+   <div class="max-w-3xl">
+     <p class="mb-6 text-[13px]">Nuestro propósito</p>
+     <h2 class="text-[35px] sm:text-5xl leading-[1] sm:leading-[1.2]">{secondIntroText}</h2>
+     <p class="mt-6 text-[17px]">{subText}</p>
+     <p class="mt-4 text-[17px]">
+       Unimos fuerzas y creamos una compañía equilibrada con capacidades únicas para generar valor a nuestros grupos de interés.
+       Nuestra sólida posición financiera asegura a nuestros clientes que estaremos ahí cuando nos necesiten para manejar sus reclamos.
+     </p>
+   </div>
+ </section>
+
+ <section id="pilares" class="w-full h-[170vh] sm:h-[62vh] my-10 sm:my-20 mb-5 px-6 sm:px-10 md:px-20 flex flex-col items-start text-start mr-auto">
+  <!-- Contenedor de texto -->
+  <div class="md:w-1/2">
+    <h2 class="text-[35px] sm:text-5xl leading-[1] sm:leading-[1.2] text-gray-900 mb-5">Nuestros pilares</h2>
+    <p class="text-gray-700 text-[15px] leading-relaxed">
+      Mantente al día con las últimas novedades y 
+      <span class="text-red-600 font-bold">acontecimientos más relevantes.</span><br>
+      Explora <span class="font-bold">temas de interés</span> y sé parte de la conversación global.
+    </p>
+  </div>
+
+  <!-- Contenedor de los pilares -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full mt-10">
+    <!-- Card 1 -->
+    <div class="relative group overflow-hidden rounded-lg shadow-lg h-[300px] sm:h-[350px] md:h-[400px]" 
+         style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/confianza.jpg'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 flex items-center justify-center transition duration-500">
+        <h3 class="text-white text-2xl font-bold absolute transition duration-500 transform scale-100 opacity-100 group-hover:scale-105 group-hover:opacity-0">
+          Confianza
+        </h3>
+        <p class="text-white text-center text-lg w-3/4 opacity-0 transform translate-y-5 transition duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+          Nuestra sólida posición financiera asegura a nuestros asegurados que estaremos ahí cuando nos necesiten para garantizar la cobertura.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="relative group overflow-hidden rounded-lg shadow-lg h-[300px] sm:h-[350px] md:h-[400px]" 
+         style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/Protección.jpg'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 flex items-center justify-center transition duration-500">
+        <h3 class="text-white text-2xl font-bold absolute transition duration-500 transform scale-100 opacity-100 group-hover:scale-105 group-hover:opacity-0">
+          Protección
+        </h3>
+        <p class="text-white text-center text-lg w-3/4 opacity-0 transform translate-y-5 transition duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+          Nuestra sólida posición financiera asegura a nuestros asegurados que estaremos ahí cuando nos necesiten para garantizar la cobertura.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="relative group overflow-hidden rounded-lg shadow-lg h-[300px] sm:h-[350px] md:h-[400px]" 
+         style="background-image: linear-gradient(#00000066, rgba(0, 0, 0, 0.4)), url('/Agilidad-1.jpg'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 flex items-center justify-center transition duration-500">
+        <h3 class="text-white text-2xl font-bold absolute transition duration-500 transform scale-100 opacity-100 group-hover:scale-105 group-hover:opacity-0">
+          Agilidad
+        </h3>
+        <p class="text-white text-center text-lg w-3/4 opacity-0 transform translate-y-5 transition duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+          Nuestra sólida posición financiera asegura a nuestros asegurados que estaremos ahí cuando nos necesiten para garantizar la cobertura.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+</Layout>

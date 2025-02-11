@@ -1,0 +1,197 @@
+---
+import Image from "astro/components/Image.astro";
+
+const mainImageSrc = "/slider2.jpg"; // Ajusta la ruta de la imagen
+const secondImage = "/2-scaled.jpg"; // Ajusta la ruta de la imagen
+const thirdImage = "/business-people-in-office-woman-looking-at-docume-2024-09-14-13-20-04-utc-scaled.jpg"; // Ajusta la ruta de la imagen
+const forthImage = "/nino.jpg"; // Ajusta la ruta de la imagen
+const fiveImage = "/pexels-arina-krasnikova-6338810-scaled.jpg"; // Ajusta la ruta de la imagen
+const title = "Una protección para <span class='font-bold text-white'>vos y tu familia</span>";
+const subtitle = "Seguro de vida para individuos";
+const description = "Con nuestro seguro de vida colectivo podes proteger a tus empleados, asociados o grupos de afinidad. Te ofrecemos una cobertura ante el riesgo de muerte por cualquier causa y opciones adicionales para garantizar el bienestar integral del grupo.";
+const buttonText = "Más información";
+const buttonLink = "https://lograrseguros.com.ar/seguros/#individuo";
+---
+
+<section class="w-full flex flex-col lg:flex-row h-[100vh] sm:h-[80vh]">
+  <!-- Izquierda: Imagen de fondo -->
+  <div class="w-full lg:w-1/2 h-full relative">
+    <img src={forthImage} alt="Seguro de Vida" class="w-full h-full object-cover" />
+  </div>
+
+  <!-- Derecha: Texto y botón -->
+  <div class="w-full lg:w-1/2 h-full bg-[#1a3855] flex flex-col justify-center px-8 lg:px-20 text-white">
+    <div class="mb-4">
+      <h2 class="text-base sm:text-6xl font-light leading-tight">
+        Una protección para <br>
+        <span class="font-bold text-white">vos y tu familia.</span>
+      </h2>
+    </div>
+
+    <p class="text-sm sm:text-base tracking-wide border-t border-gray-400 pt-3 sm:pb-20 opacity-90">
+      Seguro de vida para individuos
+    </p>
+
+    <p class="text-base sm:text-xl sm:mt-10 text-gray-300 leading-relaxed">
+      Con nuestro seguro de vida colectivo podés proteger a tus empleados, asociados o grupos de afinidad. Te ofrecemos una cobertura ante el riesgo de muerte por cualquier causa y opciones adicionales para garantizar el bienestar integral del grupo.
+    </p>
+
+    <!-- Botón -->
+    <div class="mt-8">
+      <a 
+        href={buttonLink} 
+        class="flex items-center gap-2 text-white text-sm sm:text-base font-medium border-white pb-1 tracking-wide hover:opacity-80 transition-opacity duration-300"
+      >
+        Más información →
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="w-full flex flex-col lg:flex-row h-[100vh] sm:h-[80vh]">
+  <!-- Izquierda: Fondo rojo con texto -->
+  <div class="w-full lg:w-1/2 h-full bg-[#E40134] flex flex-col justify-center px-8 lg:px-28 text-white">
+    <div class="mb-4">
+      <h2 class="text-base sm:text-6xl font-light leading-tight">
+        Adaptado a las necesidades de <br>
+        <span class="font-bold">tu organización.</span>
+      </h2>
+    </div>
+
+    <p class="text-sm sm:text-base tracking-wide border-t border-gray-400 pt-3 sm:pb-20 opacity-90">
+      Seguro de vida colectivo
+    </p>
+
+    <p class="text-base sm:text-xl sm:pt-10 text-gray-200 leading-relaxed">
+      Con nuestro seguro de vida colectivo podés proteger a tus empleados, asociados o grupos de afinidad. Te ofrecemos una cobertura ante el riesgo de muerte por cualquier causa y opciones adicionales para garantizar el bienestar integral del grupo.
+    </p>
+
+    <!-- Botón -->
+    <div class="mt-8">
+      <a 
+        href="#" 
+        class="flex items-center gap-2 text-white text-sm sm:text-base font-medium border-white pb-1 tracking-wide hover:opacity-80 transition-opacity duration-300"
+      >
+        Más información
+        <span class="text-lg">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Derecha: Imagen -->
+  <div class="w-full lg:w-1/2 h-full relative">
+    <img src={thirdImage} alt="Seguro de Vida" class="w-full h-full object-cover" />
+  </div>
+</section>
+
+<section id="insurancePartners" class="bg-gray-100 sm:h-[35vh] py-10 flex items-center">
+  <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl sm:text-4xl font-[400] text-center text-gray-800">
+        Somos un bróker, trabajamos con las <span class="font-bold">mejores aseguradoras </span>del país
+      </h2>
+      <div class="flex flex-wrap justify-center items-center gap-6 mt-8">
+          <img src="\logo_allianz.138082850e0809e8f0fa6d4ecce78507.svg" alt="Galicia Seguros" class="h-12">
+          <img src="logo_experta.c5367ced044de4f04aff457d9dcd119a.svg" alt="Galicia Seguros" class="h-12">
+          <img src="logo_mapfre.fa624441420150921eb0d49e1ba962d3.svg" alt="Galicia Seguros" class="h-12">
+          <img src="\logo_mercantil.c2ee3ff43954bf4d11fcde88d2dde75f.svg" alt="Galicia Seguros" class="h-12">
+          <img src="\logo_meridional.f64612c06415a8b22c51771414e5b0f6.svg" alt="Galicia Seguros" class="h-12">
+          <img src="\logo_nowassistance.39d6ad2f0574eafed176eb5e88466f68.svg" alt="Galicia Seguros" class="h-12">
+          <img src="\logo_provinciaseguros.e01924527f246e18a35dce92d8fe631f.svg" alt="Galicia Seguros" class="h-12">
+          <img src="\logo_sancor.553b89ec7a75299a29ae459eb1b29e24.svg" alt="Galicia Seguros" class="h-12">
+          <img src="\logo_sancristobal.bfeed5621039d88f44b5162c613d2c46.svg" alt="Galicia Seguros" class="h-12">
+      </div>
+  </div>
+</section>
+
+<section class="w-full flex flex-col lg:flex-row h-[100vh] py-10 sm:py-0 sm:h-[80vh]">
+  <!-- Izquierda: Imagen de fondo -->
+  <div class="w-full lg:w-1/2 h-full relative">
+    <img src={fiveImage} alt="Seguro de Vida" class="w-full h-full object-cover" />
+  </div>
+
+  <!-- Derecha: Texto y botón -->
+  <div class="w-full lg:w-1/2 h-full bg-[#1a3855] flex flex-col justify-center px-8 py-10 sm:py-0 lg:px-20 text-white">
+    <div class="mb-4">
+      <h2 class="text-base sm:text-6xl font-light leading-tight">
+        <span class="font-bold text-white">Tus hogar,</span>
+        <span class="font-bold text-white">tus reglas.</span>
+      </h2>
+    </div>
+
+    <p class="text-sm sm:text-base tracking-wide border-t border-gray-400 pt-3 sm:pb-20 opacity-90">
+      Seguro de vida para individuos
+    </p>
+
+    <p class="text-base sm:text-xl sm:mt-6 text-gray-300 leading-relaxed">
+      Nuestro seguro de hogar se adapta perfectamente a tus necesidades, ofreciéndote las mejores coberturas y beneficios para proteger y cuidar de ese lugar tan especial al que siempre quieres volver y disfrutar.
+    </p>
+
+    <!-- Botón -->
+    <div class="mt-8">
+      <a 
+        href={buttonLink} 
+        class="flex items-center gap-2 text-white text-sm sm:text-base font-medium border-white pb-1 tracking-wide hover:opacity-80 transition-opacity duration-300"
+      >
+        Más información →
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="animatedSection" class="flex flex-col lg:flex-row h-screen mt-[210px] sm:mt-0 transition-all duration-1000 ease-in-out bg-[#1a3855]">
+  <!-- Bloque de texto -->
+  <div class="w-full lg:w-1/3 text-white flex flex-col justify-center px-8 sm:px-16 py-10 transition-all duration-1000 ease-in-out">
+      <h2 class="text-base sm:text-4xl font-semibold leading-tight mt-4">
+        En Lograr, nos esforzamos incansablemente por anticipar riesgos a través de soluciones preventivas y recursos educativos que complementan nuestra oferta de seguros.
+      </h2>
+      <p class="text-sm sm:text-lg mt-6 text-gray-300 leading-relaxed">
+        Nuestro compromiso es estar presentes en cada paso del camino de nuestros clientes, colaborando para que sea más seguro y ofreciendo el apoyo necesario en todo momento.
+      </p>
+      <a href="#" class="mt-8 inline-block text-white text-sm sm:text-base font-medium border-b border-white pb-1 tracking-wide items-center gap-2">
+        Conocé nuestra empresa
+        <span class="text-lg">→</span>
+      </a>
+  </div>
+  
+  <!-- Imagen con transición -->
+  <div class="w-full lg:w-2/3 relative overflow-hidden">
+      <img id="animatedImage" src="/slider2.jpg" alt="Familia jugando" class="w-full h-full object-cover transition-all duration-1000 ease-in-out opacity-100">
+  </div>
+</section>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const section = document.getElementById("animatedSection");
+    const image = document.getElementById("animatedImage");
+
+    if (!section || !image) return; // Evita errores si los elementos no existen
+
+    const images = ["/slider2.jpg", "/2-scaled.jpg"];
+    let index = 0;
+
+    setInterval(() => {
+      // Cambia el fondo entre azul y rojo
+      section.classList.toggle("bg-[#1D3D59]");
+      section.classList.toggle("bg-[#E40134]");
+
+      // Escalar la imagen cuando el fondo sea rojo
+      image.classList.toggle("scale-110");
+
+      // Cambia la imagen con una animación de opacidad
+      image.style.opacity = "0";
+      setTimeout(() => {
+        index = (index + 1) % images.length;
+        image.setAttribute("src", images[index]);
+        image.style.opacity = "1";
+      }, 500);
+    }, 2000);
+  });
+</script>
+
+
+
+
+
+
+
