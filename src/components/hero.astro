@@ -40,14 +40,15 @@ const smallText = "Estamos presentes en cada paso de la vida nuestros clientes. 
 
       <h1
         data-testid="hero-text"
-        class="text-[32px] sm:text-[44px] md:text-[70px] font-bold leading-[1.1]"
+        class="text-[32px] sm:text-[44px] md:text-[70px] font-bold leading-[1.1] animate-fade-up animate-once animate-duration-[3000ms] animate-delay-0 animate-ease-out"
         set:html={mainText}
       />
+
 
       <div class="w-full mt-4 flex flex-col md:flex-row items-start gap-4 md:pl-5">
         <a
           id="SR7_8_1-28-6"
-          class="text-[15px] sm:text-[22px] md:text-[22px] font-medium text-white hover:underline transition-all duration-300 ease-in-out transform hover:scale-90 hover:opacity-80 inline-block"
+          class="text-[15px] sm:text-[22px] md:text-[22px] font-medium text-white hover:underline transition-all duration-300 ease-in-out transform hover:scale-90 hover:opacity-80 inline-block animate-fade-up animate-once animate-duration-[3000ms] animate-delay-0 animate-ease-out"
           href="#"
           target="_blank"
           rel="noopener noreferrer"
@@ -57,12 +58,11 @@ const smallText = "Estamos presentes en cada paso de la vida nuestros clientes. 
 
         <!-- 🔹 Pequeño texto que se oculta en pantallas pequeñas -->
         <p
-          class="hidden md:block text-[18px] pt-3 md:pt-7 text-white md:text-[17px]"
+          class="hidden md:block text-[18px] pt-3 md:pt-0 text-white md:text-[17px] animate-fade-up animate-once animate-duration-[3000ms] animate-delay-0 animate-ease-out"
           set:html={smallText}
         />
       </div>
     </div>
-
 
   </div>
 </section>
